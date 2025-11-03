@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; white-space: nowrap; overflow: visible; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext' type='text/css' />
+<style type='text/css'  id="style-theme_css">:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', 'SF Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>home_rental_tool</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h3 id='home-rental-tool-system----kompaktübersicht'><span>Home Rental Tool System – Kompaktübersicht</span></h3><h4 id='mitgliedschaftsstufen'><span>Mitgliedschaftsstufen</span></h4><p><span>Das System bietet fünf Mitgliedschaftsstufen mit gestaffelten monatlichen Gebühren, die unterschiedliche Mengen an monatlichen Credits, Rabattsätze und nutzungsbedingte Limitierungen gewähren.</span></p><figure class='table-figure'><table><thead><tr><th><span>Stufe</span></th><th><span>Jahresgebühr</span></th><th><span>Credits/Monat</span></th><th><span>Rabatt</span></th><th><span>Min. Mietdauer</span></th><th><span>Max. gleichzeitig</span></th></tr></thead><tbody><tr><td><span>Pay-as-you-go</span></td><td><span>£0</span></td><td><span>0</span></td><td><span>0 %</span></td><td><span>4 h</span></td><td><span>2 Geräte</span></td></tr><tr><td><span>DIY Basic</span></td><td><span>£15/Monat</span></td><td><span>50</span></td><td><span>10 %</span></td><td><span>4 h</span></td><td><span>3 Geräte</span></td></tr><tr><td><span>DIY Plus</span></td><td><span>£35/Monat</span></td><td><span>150</span></td><td><span>20 %</span></td><td><span>2 h</span></td><td><span>5 Geräte</span></td></tr><tr><td><span>Pro</span></td><td><span>£75/Monat</span></td><td><span>400</span></td><td><span>30 %</span></td><td><span>1 h</span></td><td><span>10 Geräte</span></td></tr><tr><td><span>Contractor</span></td><td><span>£150/Monat</span></td><td><span>1.000</span></td><td><span>40 %</span></td><td><span>1 h</span></td><td><span>Unbegrenzt</span></td></tr></tbody></table></figure><h4 id='werkzeugkategorien-und-preismodelle'><span>Werkzeugkategorien und Preismodelle</span></h4><p><span>Werkzeuge sind in fünf Kategorien eingeteilt, die sich nach Komplexität, Leistung und Risiko differenzieren. Jede Kategorie verfügt über differenzierte Mietmodelle und Credit-Äquivalente.</span></p><figure class='table-figure'><table><thead><tr><th><span>Kategorie</span></th><th><span>Beispiele</span></th><th><span>4 h</span></th><th><span>Tag</span></th><th><span>Wochenende</span></th><th><span>Woche</span></th><th><span>Credits</span></th></tr></thead><tbody><tr><td><strong><span>Klein (Tier 1)</span></strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>Handwerkzeug</span></td><td><span>Bohrmaschine, Schleifer, Stichsäge</span></td><td><span>£8</span></td><td><span>£15</span></td><td><span>£25</span></td><td><span>£50</span></td><td><span>40</span></td></tr><tr><td><strong><span>Mittel (Tier 2)</span></strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>Elektrowerkzeug</span></td><td><span>Kreissäge, Schwingschleifer, Häcksler</span></td><td><span>£15</span></td><td><span>£28</span></td><td><span>£50</span></td><td><span>£95</span></td><td><span>80</span></td></tr><tr><td><strong><span>Groß (Tier 3)</span></strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>Schweres Gerät</span></td><td><span>Betonmischer, Kompressor, Hochdruckreiniger</span></td><td><span>£25</span></td><td><span>£45</span></td><td><span>£80</span></td><td><span>£150</span></td><td><span>150</span></td></tr><tr><td><strong><span>Premium (Tier 4)</span></strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>Spezialwerkzeug</span></td><td><span>Fliesenschneider, Abbruchhammer, Gerüst</span></td><td><span>£35</span></td><td><span>£65</span></td><td><span>£120</span></td><td><span>£230</span></td><td><span>250</span></td></tr><tr><td><strong><span>Profi (Tier 5)</span></strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>Baumaschinen</span></td><td><span>Minibagger, Hebebühne, Rüttler</span></td><td><span>£75</span></td><td><span>£140</span></td><td><span>£260</span></td><td><span>£500</span></td><td><span>500</span></td></tr></tbody></table></figure><h4 id='zeitbasierte-multiplikatoren-und-angebote'><span>Zeitbasierte Multiplikatoren und Angebote</span></h4><p><span>Preise und Bonusstrukturen variieren nach Wochentag und Zeitfenster. Langzeitmietverträge werden durch reduzierte Multiplikatoren incentiviert.</span></p><figure class='table-figure'><table><thead><tr><th><span>Zeitfenster</span></th><th><span>Preis-Multiplikator</span></th><th><span>Credits-Bonus</span></th><th><span>Verfügbarkeit</span></th></tr></thead><tbody><tr><td><span>Werktag (Mo–Fr 8–18 h)</span></td><td><span>1,0×</span></td><td><span>Standard</span></td><td><span>Hoch</span></td></tr><tr><td><span>Abend (Mo–Fr 18–22 h)</span></td><td><span>0,8×</span></td><td><span>+20 % Credits</span></td><td><span>Mittel</span></td></tr><tr><td><span>Wochenend-Standard (Sa–So)</span></td><td><span>1,2×</span></td><td><span>Standard</span></td><td><span>Niedrig</span></td></tr><tr><td><span>Wochenend-Pauschale (Fr 18 h – Mo 8 h)</span></td><td><span>Festpreis</span></td><td><span>+50 % Credits</span></td><td><span>Mittel</span></td></tr><tr><td><span>Langzeitmiete (4+ Wochen)</span></td><td><span>0,6×</span></td><td><span>+100 % Credits</span></td><td><span>Nach Verfügbarkeit</span></td></tr></tbody></table></figure><h4 id='zusatzleistungen-und-gebühren'><span>Zusatzleistungen und Gebühren</span></h4><p><span>Lieferung, Einweisung, Versicherung und Verwaltungsleistungen werden abhängig von der Mitgliedschaftsstufe mit gestaffelten Gebühren berechnet.</span></p><figure class='table-figure'><table><thead><tr><th><span>Service</span></th><th><span>Pay-as-you-go</span></th><th><span>Basic</span></th><th><span>Plus</span></th><th><span>Pro</span></th><th><span>Contractor</span></th></tr></thead><tbody><tr><td><span>Lieferung (&lt;5 km)</span></td><td><span>£15</span></td><td><span>£12</span></td><td><span>£8</span></td><td><span>£5</span></td><td><span>Gratis</span></td></tr><tr><td><span>Lieferung (5–15 km)</span></td><td><span>£30</span></td><td><span>£25</span></td><td><span>£20</span></td><td><span>£10</span></td><td><span>Gratis</span></td></tr><tr><td><span>Abholung</span></td><td><span>£15</span></td><td><span>£12</span></td><td><span>£8</span></td><td><span>£5</span></td><td><span>Gratis</span></td></tr><tr><td><span>Einweisung (30 Min)</span></td><td><span>£20</span></td><td><span>£15</span></td><td><span>£10</span></td><td><span>Gratis</span></td><td><span>Gratis</span></td></tr><tr><td><span>Versicherung/Tag</span></td><td><span>£8</span></td><td><span>£6</span></td><td><span>£4</span></td><td><span>£2</span></td><td><span>Inklusive</span></td></tr><tr><td><span>Verspätungsgebühr/h</span></td><td><span>£10</span></td><td><span>£8</span></td><td><span>£5</span></td><td><span>£3</span></td><td><span>£2</span></td></tr><tr><td><span>Reinigungsgebühr</span></td><td><span>£25</span></td><td><span>£20</span></td><td><span>£15</span></td><td><span>£10</span></td><td><span>£5</span></td></tr><tr><td><span>Schadens-Selbstbehalt</span></td><td><span>£200</span></td><td><span>£150</span></td><td><span>£100</span></td><td><span>£50</span></td><td><span>£25</span></td></tr></tbody></table></figure><h4 id='credit-system'><span>Credit-System</span></h4><p><span>Mitglieder erhalten monatliches Guthaben und können durch Nutzungsverhalten (pünktliche Rückgaben, Bewertungen, Empfehlungen) zusätzliche Credits verdienen. Credits können zur Bezahlung oder Kostenreduktion verwendet werden.</span></p><figure class='table-figure'><table><thead><tr><th><span>Aktion</span></th><th><span>Credits verdienen</span></th><th><span>Credits einlösen</span></th></tr></thead><tbody><tr><td><span>Monatliches Guthaben</span></td><td><span>Siehe Mitgliedschaft</span></td><td><span>—</span></td></tr><tr><td><span>Rechtzeitige Rückgabe</span></td><td><span>+10 % der Mietkosten</span></td><td><span>—</span></td></tr><tr><td><span>Saubere Rückgabe</span></td><td><span>+20 Credits</span></td><td><span>—</span></td></tr><tr><td><span>Bewertung schreiben</span></td><td><span>+30 Credits</span></td><td><span>—</span></td></tr><tr><td><span>Freund werben</span></td><td><span>+150 Credits</span></td><td><span>—</span></td></tr><tr><td><span>Werkzeug reservieren</span></td><td><span>—</span></td><td><span>50 % des Preises zahlbar</span></td></tr><tr><td><span>Upgrade auf nächste Kategorie</span></td><td><span>—</span></td><td><span>Differenzkosten in Credits</span></td></tr><tr><td><span>Lieferung bezahlen</span></td><td><span>—</span></td><td><span>£1 = 5 Credits</span></td></tr></tbody></table></figure><h4 id='paket-deals'><span>Paket-Deals</span></h4><p><span>Vordefinierte Werkzeug-Kombinationen adressieren häufige Anwendungsszenarien und bieten Kostenersparnisse gegenüber Einzelmietungen.</span></p><figure class='table-figure'><table><thead><tr><th><span>Paket</span></th><th><span>Inhalt</span></th><th><span>Regulär</span></th><th><span>Mit Mitgliedschaft</span></th><th><span>Credits</span></th></tr></thead><tbody><tr><td><span>Starter Renovation</span></td><td><span>Bohrmaschine + Schleifer + Stichsäge</span></td><td><span>£45/Tag</span></td><td><span>£36/Tag (−20 %)</span></td><td><span>100</span></td></tr><tr><td><span>Weekend Warrior</span></td><td><span>3× Tier 2 Werkzeuge, Fr–Mo</span></td><td><span>£150</span></td><td><span>£120 (−20 %)</span></td><td><span>300</span></td></tr><tr><td><span>Garden Master</span></td><td><span>Häcksler + Hochdruckreiniger + Heckenschere</span></td><td><span>£80/Tag</span></td><td><span>£64/Tag (−20 %)</span></td><td><span>220</span></td></tr><tr><td><span>Flooring Pro</span></td><td><span>Fliesenschneider + Schleifer + Nivelligerät</span></td><td><span>£120/Tag</span></td><td><span>£96/Tag (−20 %)</span></td><td><span>350</span></td></tr><tr><td><span>Construction Bundle</span></td><td><span>Betonmischer + Rüttler + Schubkarre</span></td><td><span>£95/Tag</span></td><td><span>£76/Tag (−20 %)</span></td><td><span>280</span></td></tr></tbody></table></figure><h4 id='stufenspezifische-vorteile'><span>Stufenspezifische Vorteile</span></h4><p><span>Höhere Mitgliedschaftsstufen bieten erweiterte Zusatzleistungen wie Priorisierung, Kostenvergünstigungen und Spezialservices.</span></p><figure class='table-figure'><table><thead><tr><th><span>Vorteil</span></th><th><span>Pay-as-you-go</span></th><th><span>Basic</span></th><th><span>Plus</span></th><th><span>Pro</span></th><th><span>Contractor</span></th></tr></thead><tbody><tr><td><span>Priority Reservierung</span></td><td><span>—</span></td><td><span>24 h vorher</span></td><td><span>48 h vorher</span></td><td><span>7 Tage</span></td><td><span>14 Tage</span></td></tr><tr><td><span>Kostenloser Austausch bei Defekt</span></td><td><span>—</span></td><td><span>—</span></td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td><span>Flexible Rückgabe (+2 h Kulanz)</span></td><td><span>—</span></td><td><span>—</span></td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td><span>24/7 Abholung/Rückgabe</span></td><td><span>—</span></td><td><span>—</span></td><td><span>—</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td><span>Persönlicher Account Manager</span></td><td><span>—</span></td><td><span>—</span></td><td><span>—</span></td><td><span>—</span></td><td><span>✓</span></td></tr><tr><td><span>Werkzeug-Wartungsservice</span></td><td><span>—</span></td><td><span>—</span></td><td><span>—</span></td><td><span>Vergünstigt</span></td><td><span>Inklusive</span></td></tr><tr><td><span>Lager auf Baustelle</span></td><td><span>—</span></td><td><span>—</span></td><td><span>—</span></td><td><span>—</span></td><td><span>✓</span></td></tr></tbody></table></figure><h4 id='saisonale-angebote'><span>Saisonale Angebote</span></h4><p><span>Zeitlich begrenzte Promotionen fördern die Nachfrage während nachfrageschwacher Perioden und regen zur Nutzung spezifischer Werkzeugkategorien an.</span></p><figure class='table-figure'><table><thead><tr><th><span>Saison</span></th><th><span>Zeitraum</span></th><th><span>Angebot</span></th></tr></thead><tbody><tr><td><span>Frühjahrs-Aktion</span></td><td><span>Mär–Apr</span></td><td><span>−25 % auf Gartengeräte</span></td></tr><tr><td><span>Sommer-Special</span></td><td><span>Jun–Aug</span></td><td><span>Wochenendpauschale −30 %</span></td></tr><tr><td><span>Herbst-Renovation</span></td><td><span>Sep–Okt</span></td><td><span>Paket-Deals −20 % zusätzlich</span></td></tr><tr><td><span>Winter-Rabatt</span></td><td><span>Nov–Feb</span></td><td><span>−40 % auf Heizgeräte &amp; Bautrockner</span></td></tr><tr><td><span>Black Friday Week</span></td><td><span>November</span></td><td><span>Doppelte Credits auf alle Buchungen</span></td></tr></tbody></table></figure><h4 id='challenge-system'><span>Challenge-System</span></h4><p><span>Gamifizierte Anreize fördern regelmäßige Nutzung, Sorgfalt bei der Rückgabe und Kundenwerbung durch zusätzliche Gutschriftsoptionen.</span></p><figure class='table-figure'><table><thead><tr><th><span>Challenge</span></th><th><span>Bedingung</span></th><th><span>Bonus Credits</span></th></tr></thead><tbody><tr><td><span>Regular User</span></td><td><span>5 Mieten in 60 Tagen</span></td><td><span>+200</span></td></tr><tr><td><span>Tool Explorer</span></td><td><span>10 verschiedene Werkzeuge in 90 Tagen</span></td><td><span>+300</span></td></tr><tr><td><span>Weekend Warrior</span></td><td><span>4 Wochenend-Mieten in 60 Tagen</span></td><td><span>+250</span></td></tr><tr><td><span>Early Bird</span></td><td><span>5× Rückgabe vor vereinbarter Zeit</span></td><td><span>+150</span></td></tr><tr><td><span>Clean Keeper</span></td><td><span>10× saubere Rückgabe in Folge</span></td><td><span>+400</span></td></tr><tr><td><span>Referral Champion</span></td><td><span>3 Freunde erfolgreich geworben</span></td><td><span>+500</span></td></tr></tbody></table></figure><h4 id='versicherungs-optionen'><span>Versicherungs-Optionen</span></h4><p><span>Ein gestuftes Versicherungsangebot deckt unterschiedliche Risikoklassen ab, von Grundschutz bis zur erweiterten Haftpflicht mit Ausfallabsicherung.</span></p><figure class='table-figure'><table><thead><tr><th><span>Option</span></th><th><span>Deckung</span></th><th><span>Kosten/Tag</span></th><th><span>Selbstbehalt</span></th></tr></thead><tbody><tr><td><span>Basic (inklusive)</span></td><td><span>Grundschutz</span></td><td><span>Inklusive</span></td><td><span>£200</span></td></tr><tr><td><span>Standard</span></td><td><span>Diebstahl + Beschädigung</span></td><td><span>£5</span></td><td><span>£100</span></td></tr><tr><td><span>Premium</span></td><td><span>Vollkasko + Haftpflicht</span></td><td><span>£10</span></td><td><span>£25</span></td></tr><tr><td><span>Profi</span></td><td><span>Erweiterte Haftpflicht + Ausfallschutz</span></td><td><span>£15</span></td><td><span>£0</span></td></tr></tbody></table></figure><h4 id='verspätungsgebühren-gestaffelt'><span>Verspätungsgebühren (gestaffelt)</span></h4><p><span>Ein gestaffeltes Gebührenmodell mit Kulanzfrist und eskalierenden Tarife werden angewendet, um pünktliche Rückgaben zu incentivieren.</span></p><figure class='table-figure'><table><thead><tr><th><span>Verspätung</span></th><th><span>Pay-as-you-go</span></th><th><span>Basic</span></th><th><span>Plus</span></th><th><span>Pro</span></th><th><span>Contractor</span></th></tr></thead><tbody><tr><td><span>0–1 h Kulanz</span></td><td><span>£0</span></td><td><span>£0</span></td><td><span>£0</span></td><td><span>£0</span></td><td><span>£0</span></td></tr><tr><td><span>1–4 h</span></td><td><span>£10/h</span></td><td><span>£8/h</span></td><td><span>£5/h</span></td><td><span>£3/h</span></td><td><span>£2/h</span></td></tr><tr><td><span>4–24 h</span></td><td><span>£15/h</span></td><td><span>£12/h</span></td><td><span>£8/h</span></td><td><span>£5/h</span></td><td><span>£3/h</span></td></tr><tr><td><span>1–3 Tage</span></td><td><span>1,5× Tagessatz</span></td><td><span>1,3×</span></td><td><span>1,2×</span></td><td><span>1,1×</span></td><td><span>1,0×</span></td></tr><tr><td><span>3+ Tage</span></td><td><span>2× Tagessatz + Vertragsstrafe</span></td><td><span>1,8×</span></td><td><span>1,5×</span></td><td><span>1,3×</span></td><td><span>1,2×</span></td></tr></tbody></table></figure><h4 id='beispiel-szenarien-plus-mitglied'><span>Beispiel-Szenarien (Plus-Mitglied)</span></h4><p><span>Die folgenden Szenarien demonstrieren kombinierte Kostenstrukturen und Credit-Verdienste in häufigen Nutzungsmustern:</span></p><figure class='table-figure'><table><thead><tr><th><span>Szenario</span></th><th><span>Basiskosten</span></th><th><span>Mit Mitgliedschaft</span></th><th><span>Credits verwendet</span></th><th><span>Credits verdient</span></th></tr></thead><tbody><tr><td><span>Bohrmaschine, 1 Tag, Werktag</span></td><td><span>£15</span></td><td><span>£12 (−20 %)</span></td><td><span>0 oder 32 Credits</span></td><td><span>2 (rechtzeitig)</span></td></tr><tr><td><span>Betonmischer, Wochenende, mit Lieferung</span></td><td><span>£110</span></td><td><span>£88 + £8 Lieferung = £96</span></td><td><span>0 oder 230 Credits</span></td><td><span>10 (sauber)</span></td></tr><tr><td><span>Renovation Paket, Fr–Mo</span></td><td><span>£150</span></td><td><span>£120 (−20 %)</span></td><td><span>300 Credits</span></td><td><span>15 (rechtzeitig + sauber)</span></td></tr><tr><td><span>Minibagger, 1 Woche</span></td><td><span>£500</span></td><td><span>£400 (−20 %)</span></td><td><span>—</span></td><td><span>60 (rechtzeitig + Bewertung)</span></td></tr></tbody></table></figure><h4 id='kaution-und-rückerstattung'><span>Kaution und Rückerstattung</span></h4><p><span>Kautionssummen sind kategoriegebunden und werden nach Überprüfung des Gerätzustands erstattet. Die Rückgabefrist variiert nach Werkzeugkomplexität.</span></p><figure class='table-figure'><table><thead><tr><th><span>Werkzeugkategorie</span></th><th><span>Kaution</span></th><th><span>Rückerstattung</span></th><th><span>Bedingung</span></th></tr></thead><tbody><tr><td><span>Tier 1</span></td><td><span>£50</span></td><td><span>Sofort</span></td><td><span>Keine Schäden</span></td></tr><tr><td><span>Tier 2</span></td><td><span>£100</span></td><td><span>Innerhalb 24 h</span></td><td><span>Sauber + unbeschädigt</span></td></tr><tr><td><span>Tier 3</span></td><td><span>£200</span></td><td><span>Innerhalb 48 h</span></td><td><span>Geprüft + dokumentiert</span></td></tr><tr><td><span>Tier 4</span></td><td><span>£350</span></td><td><span>Innerhalb 72 h</span></td><td><span>Inspektion bestanden</span></td></tr><tr><td><span>Tier 5</span></td><td><span>£500</span></td><td><span>Innerhalb 5 Tagen</span></td><td><span>Technische Prüfung</span></td></tr></tbody></table></figure><h4 id='systemkomplexität'><span>Systemkomplexität</span></h4><p><span>Die Gesamtkonfiguration der Plattform weist eine erhebliche operative Komplexität auf: </span><strong><span>5 Mitgliedschaftsstufen</span></strong><span> • </span><strong><span>5 Werkzeugkategorien</span></strong><span> • </span><strong><span>Zeitbasierte Tarife (4 h–Woche)</span></strong><span> • </span><strong><span>Credit-System mit 15+ Verdienstmöglichkeiten</span></strong><span> • </span><strong><span>6 Paket-Deals</span></strong><span> • </span><strong><span>Variable Lieferkosten</span></strong><span> • </span><strong><span>5 Versicherungsoptionen</span></strong><span> • </span><strong><span>Gestaffelte Verspätungsgebühren</span></strong><span> • </span><strong><span>6 Challenges</span></strong><span> • </span><strong><span>Saisonale Angebote</span></strong><span> • </span><strong><span>Kombinierbare Rabatte</span></strong></p></div></div>
+</body>
+</html>
