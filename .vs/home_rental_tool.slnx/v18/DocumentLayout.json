@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7AF5FFF4-FF9C-4A52-8881-02BE186497A4}|home_rental_tool.csproj|c:\\users\\e1468709\\onedrive - emerson\\documents\\dhbw\\5-semester-dhbw\\c-sharp-trainings\\tutorials\\home_rental_tool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7AF5FFF4-FF9C-4A52-8881-02BE186497A4}|home_rental_tool.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Models\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\UI\\ConsoleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\ConsoleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsoleService.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\UI\\ConsoleService.cs",
+              "RelativeDocumentMoniker": "UI\\ConsoleService.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\UI\\ConsoleService.cs",
+              "RelativeToolTip": "UI\\ConsoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T11:32:18.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Models\\Enums.cs",
+              "RelativeDocumentMoniker": "Models\\Enums.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Models\\Enums.cs",
+              "RelativeToolTip": "Models\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T11:31:44.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T11:21:58.317Z",
+              "WhenOpened": "2025-11-03T11:28:55.223Z",
               "EditorCaption": ""
             }
           ]
