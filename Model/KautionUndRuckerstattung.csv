@@ -1,0 +1,6 @@
+Werkzeugkategorie,Kaution,Rückerstattung,Bedingung
+Tier 1,£50,Sofort,Keine Schäden
+Tier 2,£100,Innerhalb 24 h,Sauber + unbeschädigt
+Tier 3,£200,Innerhalb 48 h,Geprüft + dokumentiert
+Tier 4,£350,Innerhalb 72 h,Inspektion bestanden
+Tier 5,£500,Innerhalb 5 Tagen,Technische Prüfung

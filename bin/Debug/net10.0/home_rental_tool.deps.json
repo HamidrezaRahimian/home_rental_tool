@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "home_rental_tool/1.0.0": {
+        "runtime": {
+          "home_rental_tool.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "home_rental_tool/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

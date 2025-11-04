@@ -1,18 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\",
+  "WorkspaceRootPath": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Models\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\UI\\ConsoleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\ConsoleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\PricingEngine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Pricing\\PricingEngine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\DiscountPipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Pricing\\DiscountPipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\BasePriceStrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Pricing\\BasePriceStrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\IPricingStrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Pricing\\IPricingStrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Credits\\CreditEngine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Credits\\CreditEngine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Credits\\CreditCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Credits\\CreditCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\ValueObjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\ValueObjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConsoleService.cs",
-              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\UI\\ConsoleService.cs",
-              "RelativeDocumentMoniker": "UI\\ConsoleService.cs",
-              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\UI\\ConsoleService.cs",
-              "RelativeToolTip": "UI\\ConsoleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PricingEngine.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\PricingEngine.cs",
+              "RelativeDocumentMoniker": "Domain\\Pricing\\PricingEngine.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\PricingEngine.cs",
+              "RelativeToolTip": "Domain\\Pricing\\PricingEngine.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T11:32:18.346Z",
+              "WhenOpened": "2025-11-04T23:24:46.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Models\\Enums.cs",
-              "RelativeDocumentMoniker": "Models\\Enums.cs",
-              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Models\\Enums.cs",
-              "RelativeToolTip": "Models\\Enums.cs",
+              "DocumentIndex": 3,
+              "Title": "BasePriceStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\BasePriceStrategy.cs",
+              "RelativeDocumentMoniker": "Domain\\Pricing\\BasePriceStrategy.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\BasePriceStrategy.cs",
+              "RelativeToolTip": "Domain\\Pricing\\BasePriceStrategy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T11:31:44.263Z",
+              "WhenOpened": "2025-11-04T23:24:24.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Title": "DiscountPipeline.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\DiscountPipeline.cs",
+              "RelativeDocumentMoniker": "Domain\\Pricing\\DiscountPipeline.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\DiscountPipeline.cs",
+              "RelativeToolTip": "Domain\\Pricing\\DiscountPipeline.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T11:28:55.223Z",
+              "WhenOpened": "2025-11-04T23:24:23.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPricingStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\IPricingStrategy.cs",
+              "RelativeDocumentMoniker": "Domain\\Pricing\\IPricingStrategy.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Pricing\\IPricingStrategy.cs",
+              "RelativeToolTip": "Domain\\Pricing\\IPricingStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T23:24:22.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreditEngine.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Credits\\CreditEngine.cs",
+              "RelativeDocumentMoniker": "Domain\\Credits\\CreditEngine.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Credits\\CreditEngine.cs",
+              "RelativeToolTip": "Domain\\Credits\\CreditEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T23:21:11.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreditCommand.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Credits\\CreditCommand.cs",
+              "RelativeDocumentMoniker": "Domain\\Credits\\CreditCommand.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\Credits\\CreditCommand.cs",
+              "RelativeToolTip": "Domain\\Credits\\CreditCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T23:20:53.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ValueObjects.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\ValueObjects.cs",
+              "RelativeDocumentMoniker": "Domain\\ValueObjects.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Domain\\ValueObjects.cs",
+              "RelativeToolTip": "Domain\\ValueObjects.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T23:19:27.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T22:50:11.226Z",
               "EditorCaption": ""
             }
           ]

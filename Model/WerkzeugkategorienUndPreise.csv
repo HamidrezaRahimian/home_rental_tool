@@ -1,0 +1,6 @@
+Kategorie (Tier),Unterkategorie,Beispiele,4 h,Tag,Wochenende,Woche,Credits
+Klein (Tier 1),Handwerkzeug,"Bohrmaschine; Schleifer; Stichsäge","£8","£15","£25","£50",40
+Mittel (Tier 2),Elektrowerkzeug,"Kreissäge; Schwingschleifer; Häcksler","£15","£28","£50","£95",80
+Groß (Tier 3),Schweres Gerät,"Betonmischer; Kompressor; Hochdruckreiniger","£25","£45","£80","£150",150
+Premium (Tier 4),Spezialwerkzeug,"Fliesenschneider; Abbruchhammer; Gerüst","£35","£65","£120","£230",250
+Profi (Tier 5),Baumaschinen,"Minibagger; Hebebühne; Rüttler","£75","£140","£260","£500",500

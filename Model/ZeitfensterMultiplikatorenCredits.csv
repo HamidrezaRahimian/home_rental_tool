@@ -1,0 +1,6 @@
+Zeitfenster,Preis-Multiplikator,Credits-Bonus,Verfügbarkeit
+Werktag (Mo–Fr 8–18 h),1.0x,Standard,Hoch
+Abend (Mo–Fr 18–22 h),0.8x,"+20 % Credits",Mittel
+Wochenend-Standard (Sa–So),1.2x,Standard,Niedrig
+Wochenend-Pauschale (Fr 18 h – Mo 8 h),Festpreis,"+50 % Credits",Mittel
+Langzeitmiete (4+ Wochen),0.6x,"+100 % Credits",Nach Verfügbarkeit

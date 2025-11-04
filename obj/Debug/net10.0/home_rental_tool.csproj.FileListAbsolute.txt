@@ -1,0 +1,15 @@
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\home_rental_tool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\home_rental_tool.AssemblyInfoInputs.cache
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\home_rental_tool.AssemblyInfo.cs
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\home_rental_tool.csproj.CoreCompileInputs.cache
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\home_rental_tool.sourcelink.json
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\bin\Debug\net10.0\home_rental_tool.exe
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\bin\Debug\net10.0\home_rental_tool.deps.json
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\bin\Debug\net10.0\home_rental_tool.runtimeconfig.json
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\bin\Debug\net10.0\home_rental_tool.dll
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\bin\Debug\net10.0\home_rental_tool.pdb
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\home_rental_tool.dll
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\refint\home_rental_tool.dll
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\home_rental_tool.pdb
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\home_rental_tool.genruntimeconfig.cache
+C:\Users\E1468709\OneDrive - Emerson\Documents\DHBW\5-semester-DHBW\c-sharp-Trainings\tutorials\test\home_rental_tool\obj\Debug\net10.0\ref\home_rental_tool.dll
