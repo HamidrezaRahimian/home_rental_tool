@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\home_rental_tool.csproj",
+      "projectUniqueName": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\home_rental_tool.csproj",
       "projectName": "home_rental_tool",
-      "projectPath": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\home_rental_tool.csproj",
+      "projectPath": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\home_rental_tool.csproj",
       "packagesPath": "C:\\Users\\E1468709\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\home_rental_tool\\obj\\",
+      "outputPath": "C:\\Users\\E1468709\\OneDrive - Emerson\\Documents\\DHBW\\5-semester-DHBW\\c-sharp-Trainings\\tutorials\\test\\home_rental_tool\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

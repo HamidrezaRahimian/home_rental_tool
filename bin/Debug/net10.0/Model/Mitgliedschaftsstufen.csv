@@ -1,0 +1,6 @@
+Stufe,Jahresgebühr,Credits/Monat,Rabatt,Min. Mietdauer,Max. gleichzeitig
+Pay-as-you-go,£0,0,"0 %",4 h,2 Geräte
+DIY Basic,"£15/Monat",50,"10 %",4 h,3 Geräte
+DIY Plus,"£35/Monat",150,"20 %",2 h,5 Geräte
+Pro,"£75/Monat",400,"30 %",1 h,10 Geräte
+Contractor,"£150/Monat","1,000","40 %",1 h,Unbegrenzt

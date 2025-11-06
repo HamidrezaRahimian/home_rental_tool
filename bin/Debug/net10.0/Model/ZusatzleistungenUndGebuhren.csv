@@ -1,0 +1,9 @@
+Service,Pay-as-you-go,Basic,Plus,Pro,Contractor
+Lieferung (<5 km),£15,£12,£8,£5,Gratis
+Lieferung (5–15 km),£30,£25,£20,£10,Gratis
+Abholung,£15,£12,£8,£5,Gratis
+Einweisung (30 Min),£20,£15,£10,Gratis,Gratis
+Versicherung/Tag,£8,£6,£4,£2,Inklusive
+Verspätungsgebühr/h,£10,£8,£5,£3,£2
+Reinigungsgebühr,£25,£20,£15,£10,£5
+Schadens-Selbstbehalt,£200,£150,£100,£50,£25
